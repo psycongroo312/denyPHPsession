@@ -1,27 +1,36 @@
-<?php session_start(); ?>
+<!-- <?php 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="header">
-        <h1>login</h1>
-        <?php if (!isset($_SESSION['username'])) {?>
-        <form method="POST" action="register.php">
-            <label for="login">Логин</label>
-            <input type="text" name="login">
-            <label for="password">Пароль</label>
-            <input type="password" name="password">
-            <input type="submit" value="войти">
+// $myConnect = mysqli_connect(hostname:'localhost', username:'deny-IBM-5100', password: 'ELPSYCONGROO', database: 'BOOKS');
 
-        </form>
-        <?php } else {?>
-            <div><?php echo $_SESSION['username'] ?></div>
-            <?php }?>
-    </div>
-</body>
-</html>
+
+
+// $author = $_POST['author'];
+// $book = $_POST['book'];
+// $pages = $_POST['pages'];
+
+// $q = 'INSERT INTO BOOKS(name, authpor, pages) VALUES ("' . $author . $book . $pages . '")';
+
+
+// $result = mysqli_prepare($myConnect, $q);
+
+
+// mysqli_execute($result);
+
+
+// $query = "SELECT * FROM BOOKS";
+
+// $stmt = mysqli_prepare($myConnect, $query   );
+
+// $result = mysqli_query($myConnect, $query);
+
+// while($row = mysqli_fetch_assoc($result)){
+//     echo $row['author'] . '<br>';
+// }
+
+// var_dump($row);
+//  -->
+
+
+
+
+
