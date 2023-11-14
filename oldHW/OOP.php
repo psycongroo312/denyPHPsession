@@ -38,12 +38,7 @@ class Animal
 
         $this->voice = $voice;
 
-        if ($hasTail === true) {
-
-            $hasTail = true;
-    }
-
-    $this->hasTail = true;
+        $this->hasTail = true;
 
     }
 
@@ -69,3 +64,6 @@ class Animal
 
 
 }
+
+$Leon = new Animal(12,140,200,'aaaa', true);
+
