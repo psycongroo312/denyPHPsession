@@ -54,10 +54,14 @@
             
             public function calculate(string $operation, int $a, int $b)
             {
+                switch ($operation) {
                 return $this->additioner->process($a, $b);
+                }
                 return $this->subtraction->process($a, $b);
                 return $this->multiplication->process($a, $b);
                 return $this->division->process($a, $b)
+
+                
             }
         }
 
