@@ -38,13 +38,13 @@
         class Calculator
         {
 
-            private Additioner $aditioner;
+            private Additioner $additioner;
             private Subtraction $subtraction;
             private Multiplication $multiplication;
             private Division $division;
 
 
-            public function __construct(Additioner $aditioner, Subtraction $subtraction, Multiplication $multiplication, Division $division)
+            public function __construct(Additioner $additioner, Subtraction $subtraction, Multiplication $multiplication, Division $division)
             {
                 $this->additioner = $additioner;
                 $this->subtraction = $subtraction;
