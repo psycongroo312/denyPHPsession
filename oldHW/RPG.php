@@ -32,7 +32,7 @@ class Boss extends Character {
     }
 
     public function getHealth() {
-        return self::getHealth() * self::getBossHealth();
+        return parent::getHealth() * self::getBossHealth();
     }
 }
 
