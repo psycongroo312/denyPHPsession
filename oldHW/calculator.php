@@ -44,7 +44,7 @@
             private Division $division;
 
 
-            public function __construct(Additioner $aditioner, Subtraction $subtraction, Multiplication $multipleIterator, Division $division)
+            public function __construct(Additioner $aditioner, Subtraction $subtraction, Multiplication $multiplication, Division $division)
             {
                 $this->additioner = $additioner;
                 $this->subtraction = $subtraction;
@@ -55,13 +55,16 @@
             public function calculate(string $operation, int $a, int $b)
             {
                 switch ($operation) {
+                    case "add":
                 return $this->additioner->process($a, $b);
-                }
+                case "sub":
                 return $this->subtraction->process($a, $b);
+                case "multi":
                 return $this->multiplication->process($a, $b);
-                return $this->division->process($a, $b)
+                case "div":
+                return $this->division->process($a, $b);
 
-                
+                }
             }
         }
 
