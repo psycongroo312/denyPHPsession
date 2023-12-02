@@ -1,0 +1,15 @@
+{
+    "name": "deny/php.mysql",
+    "autoload": {
+        "psr-4": {
+            "Deny\\PhpMysql\\": "HW/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Deny",
+            "email": "deniphoto@mail.ru"
+        }
+    ],
+    "require": {}
+}

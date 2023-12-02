@@ -1,0 +1,32 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    gap: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(99, 99, 255);
+    color: #ffff;
+
+}
+
+.link-color{
+    list-style-type:none;
+    color: #ffff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 400px){
+    main {
+        flex-direction: column;
+    }
+}
